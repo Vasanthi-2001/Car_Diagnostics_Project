@@ -1,0 +1,21 @@
+1. Code Generation & Debugging:
+-> create folder structure to my project
+-> /fix the errors
+->give the documentation related to my project (car-diagnostics-project)
+
+
+2. Code Review & Refactoring:
+->refactor this code
+->Refactor this procedural car diagnostic code into a clean OOP Python program with classes Car, Diagnostic, and GarageMonitor.
+->Use constructors and encapsulation for all attributes.
+->Replace magic numbers with constants like MAX_SCORE, LOAD_FACTOR, TEMP_BASE, and ALERT_THRESHOLD.
+->Read car data (rpm, load, temperature) from a CSV file using Python’s csv module, with validation and exception handling for empty or malformed rows.
+->Move score calculation to Diagnostic, and let GarageMonitor check scores and print alerts if below threshold.
+
+3.unit testcases
+->create unit testcases for this project
+->/fix the bugs
+
+4.documentation:
+->/doc generate documentation for my project
+-> add comments to this file
