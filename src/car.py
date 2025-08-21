@@ -1,4 +1,36 @@
+
+
 class Car:
+    """
+    @file car.py
+    @brief Defines the Car class for managing car diagnostics and performance evaluation.
+
+    @class Car
+    @brief Represents a car with diagnostic data and performance scoring.
+
+    @fn __init__(self, car_id)
+    @brief Initializes a Car instance.
+    @param car_id Unique identifier for the car.
+
+    @fn add_diagnostic(self, diag)
+    @brief Adds a diagnostic entry to the car.
+    @param diag Dictionary containing diagnostic data ('id', 'type', 'value').
+
+    @fn compute_performance_score(self)
+    @brief Computes the car's performance score based on diagnostic values.
+    @return int Performance score (out of 100).
+
+    @fn has_all_diagnostics(self)
+    @brief Checks if all required diagnostic types are present.
+    @return bool True if all required types are present, False otherwise.
+
+    @fn get_alerts(self)
+    @brief Generates alerts based on diagnostic values and performance score.
+    @return list List of alert messages.
+
+    @import Diagnostic
+    @brief Imports the Diagnostic class for use in Car.
+    """
     def __init__(self, car_id):
         self.id = car_id
         self.diagnostics = []

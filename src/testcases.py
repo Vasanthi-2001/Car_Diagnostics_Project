@@ -1,4 +1,29 @@
+
+
 import unittest
+"""
+@file testcases.py
+@brief Unit tests for car diagnostics project components.
+This module contains unit tests for the Diagnostic, Car, and GarageMonitor classes.
+It verifies correct behavior for diagnostic representation, car performance scoring,
+diagnostic completeness, alert generation, and garage-level monitoring features.
+Classes:
+    TestDiagnostic: Tests for the Diagnostic class.
+        - test_repr: Checks string representation of Diagnostic objects.
+    TestCar: Tests for the Car class.
+        - setUp: Initializes a Car instance with sample diagnostics.
+        - test_compute_performance_score: Verifies performance score calculation.
+        - test_has_all_diagnostics: Checks if all required diagnostics are present.
+        - test_get_alerts: Ensures alerts are generated for severe engine stress.
+        - test_missing_diagnostic: Tests behavior when diagnostics are missing.
+    TestGarageMonitor: Tests for the GarageMonitor class.
+        - setUp: Initializes GarageMonitor with two Car instances.
+        - test_check_driver_abuse: Checks detection of driver abuse alerts.
+        - test_check_engine_issues: Verifies engine issue detection.
+        - test_assess_health: Assesses overall health and alert generation.
+@date 2024-06
+@copyright Copyright (c) 2024
+"""
 from diagnostic import Diagnostic
 from car import Car
 from garage_monitor import GarageMonitor
